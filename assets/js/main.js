@@ -16,6 +16,31 @@ function actions() {
     });
 }
 function afterLoaded() {
+//    feed = new Instafeed({
+//        get: 'tagged',
+//        tagName: 'puppies',
+//        userId: 141970,
+//        accessToken: '141970.467ede5.edbc9c37472d41b790e1db8948793f11',
+//        sortby: 'random',
+//        resolution: 'thumbnail',
+//        links: 'false',
+//        limit: '60',
+//        template: '<img src="{{image}}"/>', 
+//        after: function(){
+//            $.ajaxSetup({ cache: false });
+//            
+//            if($('#instafeed img').length < 60) {
+//                feed.run();
+//            }
+//            
+//            $makeImages = master.window.width / 10;
+//            $('#instafeed img').width($makeImages);
+//        }
+//    });
+//
+//    feed.run();
+    
+    
     smoothScroll();
 }
 

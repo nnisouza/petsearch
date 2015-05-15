@@ -1,4 +1,34 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+@font-face {
+    font-family: 'Bariol';
+    src: url('../fonts/bariol_regular-webfont.eot');
+    src: url('../fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_regular-webfont.woff') format('woff'),
+         url('../fonts/bariol_regular-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_regular-webfont.svg#bariol-regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    src: url('../fonts/bariol_regular_italic-webfont.eot');
+    src: url('../fonts/bariol_regular_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_regular_italic-webfont.woff') format('woff'),
+         url('../fonts/bariol_regular_italic-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_regular_italic-webfont.svg#bariol-regular-italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    src: url('../fonts/bariol_bold-webfont.eot');
+    src: url('../fonts/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_bold-webfont.woff') format('woff'),
+         url('../fonts/bariol_bold-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_bold-webfont.svg#bariol-bold') format('svg');
+    font-weight: 700;
+}
 
 html,
 button,
@@ -6,13 +36,13 @@ input,
 select,
 textarea {
     color: #343434;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bariol', sans-serif;
 }
 
 html {
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bariol', sans-serif;
 }
 html,
 body{
@@ -106,6 +136,7 @@ textarea {
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
+    font-size: 18px;
 }
 .home .header .head .alert span{
     display: inline-block;
@@ -113,13 +144,7 @@ textarea {
     height: 90px;
     background: url('../img/mark/alergBG.png') no-repeat center center;
     float: left;
-    margin-right: 9px;
-}
-.home .header .head .alert span i{
-    color: #feb83c;
-    text-align: center;
-    line-height: 90px;
-    width: 90px;
+    margin-right: 5px;
 }
 .home .header .head .menu{
     margin: 0;
@@ -159,13 +184,19 @@ textarea {
 .blueLayer{
     height: 666px;
     width: 100%;
-    background: rgba(0, 2, 176, 0.6)
 }
 .garden{
     height: 778px;
     width: 100%;
     position: relative;
-    background: #fff;
+}
+.garden .embalagem{
+    background: url('../img/embalagem.png');
+    width: 426px;
+    height: 550px;
+    position: absolute;
+    top: 113px;
+    right: -40px;
 }
 #instafeed{
     position: fixed;
@@ -175,12 +206,10 @@ textarea {
     width: 100%;
     height: 100%;
     z-index: -10;
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    filter: blur(2px);
-    background: #000088;
-    
-    display: none;
+    -webkit-filter: blur(2px) grayscale(100%);
+    -moz-filter: blur(2px) grayscale(100%);
+    filter: blur(2px) grayscale(100%);
+    background: #000;
 }
 #instafeed img{
     opacity: 0.4;

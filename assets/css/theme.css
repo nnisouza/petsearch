@@ -1,8 +1,19 @@
 body{
     background: url('../img/mark/model.jpg') center top;
 }
-body, p, a, h1, h2, h3, h3{
+body, p, a, h2, h3, h3{
     color: #282828;
+}
+h1{
+    color: transparent;
+    text-indent: -1000px;
+    margin: 0;
+}
+.home h1{
+    background: url(../img/mark/logo.png) center bottom no-repeat;
+    width: 343px;
+    height: 235px;
+    padding-top: 170px;
 }
 .header{
     background: url('../img/mark/bg.jpg') center top fixed;
@@ -19,12 +30,18 @@ body, p, a, h1, h2, h3, h3{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4e7e', endColorstr='#1e4e7e',GradientType=0 ); /* IE6-9 */
 
 }
+.blueLayer{
+    background-image: -moz-linear-gradient( 90deg, rgba(55, 68, 255, 0.6) 0%, rgba(0, 131, 177, 0.6) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgba(55, 68, 255, 0.6) 0%, rgba(0, 131, 177, 0.6) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgba(55, 68, 255, 0.6) 0%, rgba(0, 131, 177, 0.6) 100%);
+}
 .menu a{
     color: #fff;
     font-weight: 300;
     text-decoration: none;
     margin: 0 8px;
     line-height: 60px;
+    font-size: 18px;
 }
 .separator svg{
     display: block;
@@ -56,6 +73,10 @@ body, p, a, h1, h2, h3, h3{
     background: -ms-radial-gradient(center, ellipse cover, rgba(253,209,110,1) 0%, rgba(253,180,63,1) 44%, rgba(254,171,49,1) 58%); /* ie10+ */
     background:radial-gradient(ellipse at center, rgba(253,209,110,1) 0%, rgba(253,180,63,1) 44%, rgba(254,171,49,1) 58%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdd16e', endColorstr='#feab31',GradientType=0 ); /* ie6-9 */
+}
+.garden{
+    background: url('../img/garden.jpg') no-repeat center top #fff;
+    background-size: cover;
 }
 .sierra::before{
     top: -33px;
